@@ -1,1 +1,1 @@
-// Archivo de script inicial
+document.addEventListener("DOMContentLoaded", () => { const form = document.getElementById("loginForm"); if(form){ form.addEventListener("submit", (e) => { e.preventDefault(); const user = document.getElementById("user").value; const pass = document.getElementById("pass").value; if(!user || !pass){ alert("Por favor complete todos los campos"); } else { alert("Bienvenido " + user); } }); } });
